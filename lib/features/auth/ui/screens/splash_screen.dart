@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:library_management/features/auth/ui/screens/signup_screen.dart';
+import 'package:library_management/features/auth/ui/screens/signin_screen.dart';
 
 class SplashScreen extends StatefulWidget {
   static const String route = '/';
@@ -15,12 +15,12 @@ class _SplashScreenState extends State<SplashScreen> {
   void initState() {
     super.initState();
     Future.delayed(Duration(seconds: 3), () {
-      _navigateToSignUpScreen();
+      _navigateToSignInScreen();
     });
   }
 
-  void _navigateToSignUpScreen() {
-    Get.offNamed(SignupScreen.route);
+  void _navigateToSignInScreen() {
+    Get.offNamed(SigninScreen.route);
   }
 
   @override
